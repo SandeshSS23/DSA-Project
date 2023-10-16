@@ -6,6 +6,8 @@
 
 #include "ImageCompression.h"
 #include "AudioCompression.h"
+#include "textcomp.h"
+
 
 int main(int argc, char **argv)
 {
@@ -47,10 +49,16 @@ int main(int argc, char **argv)
         printf("\nThe file is Audio file\n");
     }
     check = strcmp(lastThree, "txt");
+    if (!check)
+    {
+        flag = 3;
+        printf("\nThe file is text file\n");
+    }
+
 
     if (flag == 0)
     {
-        printf("\nThe file name entered is not valid. \n\n For image file please enter the name in format .bmp \n For Audio File please enter the name in format .wav \n");
+        printf("\nThe file name entered is not valid. \n\n For image file please enter the name in format .bmp \n For Audio File please enter the name in format .wav \n For text files, enter the file in .txt format");
         return 1;
     }
 
@@ -68,6 +76,13 @@ int main(int argc, char **argv)
             audioCompression(filename);
             break;
         }
+        
+        case 3:{
+            // Text Compression
+            textCompression(filename);
+            break;
+        }
+        
         default:
             break;
     }
