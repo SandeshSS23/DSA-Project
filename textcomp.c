@@ -140,3 +140,34 @@ void decode(const int* op, int op_size) {
 
    
 }
+
+
+void textCompression(char * filename){
+    printf("Text Compression called for the file named %s\n",filename);
+
+    const int MAX_LINE_SIZE = 650000;
+
+    FILE* input_file = fopen(filename, "r");
+    if (input_file == NULL) {
+        printf("Failed to open input file.\n");
+        return ;
+    }    
+
+    char input_line[MAX_LINE_SIZE];
+    
+    fread(input_line,sizeof(char),MAX_LINE_SIZE,input_file);
+    
+    fclose(input_file);
+
+    
+    int output_code[MAX_TABLE_SIZE];
+    encode(input_line, output_code);
+    int opsize = sizeof(output_code)/sizeof(int);
+   
+    decode(output_code, strlen(input_line));
+    return;
+}
+
+
+
+

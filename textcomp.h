@@ -14,3 +14,4 @@ void insertnode(node** table, int size, const char* sequence, int code);
 
 void encode(const char* s1, int* output_code);
 void decode(const int* op, int op_size);
+void textCompression(char * filename);
