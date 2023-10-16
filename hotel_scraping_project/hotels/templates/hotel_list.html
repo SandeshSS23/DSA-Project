@@ -1,0 +1,9 @@
+<h2>Hotels in {{ city }}</h2>
+<ul>
+    {% for hotel in hotels %}
+        <li>{{ hotel.name }} - Price: {{ hotel.price }}</li>
+    {% empty %}
+        <li>No hotels found.</li>
+    {% endfor %}
+</ul>
+
