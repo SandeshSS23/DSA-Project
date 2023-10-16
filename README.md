@@ -1,2 +1,4 @@
 # RPPOOP-Project
-Vacation Planner project using python and OOPS concepts. 
+DSA project consisting two modules namely audio and image compression
+format for audio files: .wav
+format for image files: .bmp
