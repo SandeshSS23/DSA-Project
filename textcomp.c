@@ -1,4 +1,4 @@
-#include "Textcomp.h"
+#include "textcomp.h"
 
 node* createnode(const char* sequence, int code) {
     node*nn = malloc(sizeof(node));
