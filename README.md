@@ -1,5 +1,5 @@
 # DSA Project
-Multimodal compression for lossy compression of image files, and lossless compression of audio and text files.
+Multimodal compression for lossy compression of audio and image files, and lossless compression of text files.
 
 Instructions for using the software: 
 1) compile all C files by doing cc *.c
