@@ -41,6 +41,7 @@ Examples:
 
 
 🧠 Algorithms Used
+
 📷 Image Compression
 Quad Tree Decomposition for recursively dividing image regions
 
