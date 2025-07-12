@@ -43,40 +43,43 @@ Examples:
 🧠 Algorithms Used
 
 📷 Image Compression
-Quad Tree Decomposition for recursively dividing image regions
-
-Stores average color per quadrant to reduce storage
-
-Decompression via postorder traversal reconstruction
-
-Time Complexity: O(N^2 * log4(N))
-Space Complexity: O(N) + O(M^2)
+  
+  - Quad Tree Decomposition for recursively dividing image regions
+  
+  - Stores average color per quadrant to reduce storage
+  
+  - Decompression via postorder traversal reconstruction
+  
+  - Time Complexity: O(N^2 * log4(N))
+  - Space Complexity: O(N) + O(M^2)
 
 
 🔉 Audio Compression
-Non-linear Companding using lookup tables
 
-Customizable output bits for sample size
+  - Non-linear Companding using lookup tables
 
-Fast encoding with constant time lookup
+  - Customizable output bits for sample size
 
-Time Complexity: O(N)
-(N = number of audio samples)
+  - Fast encoding with constant time lookup
+
+  - Time Complexity: O(N)
+  - (N = number of audio samples)
 
 
 📝 Text Compression
-LZW (Lempel-Ziv-Welch) compression for dictionary-based encoding
 
-Dynamically builds a code table while reading text
+  - LZW (Lempel-Ziv-Welch) compression for dictionary-based encoding
 
-Efficient for repetitive patterns
+  - Dynamically builds a code table while reading text
 
-Time Complexity: O(k * n)
-(n = input length, k = avg. sequence length)
+  - Efficient for repetitive patterns
+
+  - Time Complexity: O(k * n)
+  - (n = input length, k = avg. sequence length)
 
 
 👨‍💻 Contributors
 
-Sandesh Sahane
-Priti Patil
-Samarth Kanwate
+  - Sandesh Sahane
+  - Priti Patil
+  - Samarth Kanwate
